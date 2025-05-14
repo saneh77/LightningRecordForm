@@ -1,0 +1,17 @@
+<template>
+	<lightning-card title={title} >
+		
+		<lightning-record-form 
+		onsuccess={handleSuccess}
+		record-id={recordId} 
+		object-api-name={objectApiName} 
+		layout-type={layouttype}
+		fields={listoffield} 
+		columns={column} 
+		mode={mode}
+		record-type-id={recTypeId}
+		density={density}
+		>
+		</lightning-record-form>
+	</lightning-card>
+</template>

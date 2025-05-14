@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<masterLabel>LightningRecordFormLWC</masterLabel>
+	<apiVersion>60.0</apiVersion>
+	<isExposed>true</isExposed>
+	<targets>
+		<target>lightning__FlowScreen</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__RecordPage</target> 
+        
+	</targets>
+	<targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="title" type="String" label="Title" description="Enter the Page Title"/>
+            <property name="fields" type="String" label="List of Fields" description="Enter Comma separated list of fields API Names"/>
+            <property name="objectApiName" type="String" label="Object Api Name" description="Enter Object Api Name"/>
+            <property name="layouttype" type="String" label="Layout Type" description="The type of layout to use to display the form fields. Possible values: Compact, Full. When creating a new record, only the full layout is supported."/>
+            <property name="recId" type="String" label="Record ID" description="Pass the Record Id to auto fetch and update on the record data"/>
+            <property name="recTypeId" type="String" label="Record Type ID" description="Pass the Record Type Id to auto fetch the pagelayout and the record data accordingly"/>
+            <property name="mode" type="String"  label="Mode"  description="The component accepts a mode value that determines the user interaction allowed for the form. The value for mode can be one of the following: edit - Creates an editable form to add a record or update an existing one. When updating an existing record, specify the record-id. Edit mode is the default when record-id is not provided, and displays a form to create new records. view - Creates a form to display a record that the user can also edit. The record fields each have an edit button. View mode is the default when record-id is provided. readonly - Creates a form to display a record without enabling edits. The form doesn't display any buttons."/>
+            <property name="column" type="String" label="Columns"  description="Add the number of columns"/>
+            <property name="density" type="String"  label="Density"  description="Sets the arrangement style of fields and labels in the form. Accepted values are compact, comfy, and auto (default). Use compact to display fields and their labels on the same line. Use comfy to display fields below their labels. Use auto to let the component dynamically set the density according to the user's Display Density setting and the width of the form."/>
+
+        </targetConfig>
+
+        <targetConfig targets="lightning__HomePage,lightning__RecordPage">
+            <property name="title" type="String" label="Title" description="Enter the Page Title"/>
+            <property name="fields" type="String" label="List of Fields" description="Enter Comma separated list of fields API Names"/>
+            <property name="objectApiName" type="String" label="Object Api Name" description="Enter Object Api Name"/>
+            <property name="layouttype" type="String" label="Layout Type" default="None" description="The type of layout to use to display the form fields. Possible values: Compact, Full. When creating a new record, only the full layout is supported."/>
+            <property name="recId" type="String" label="Record ID" description="Pass the Record Id to auto fetch and update on the record data/"/>
+            <property name="recTypeId" type="String" label="Record Type ID" description="Pass the Record Type Id to auto fetch the pagelayout and the record data accordingly/"/>
+            <property name="mode" type="String"  label="Mode" default="edit" description="The component accepts a mode value that determines the user interaction allowed for the form. The value for mode can be one of the following: edit - Creates an editable form to add a record or update an existing one. When updating an existing record, specify the record-id. Edit mode is the default when record-id is not provided, and displays a form to create new records. view - Creates a form to display a record that the user can also edit. The record fields each have an edit button. View mode is the default when record-id is provided. readonly - Creates a form to display a record without enabling edits. The form doesn't display any buttons."/>
+            <property name="column" type="String" label="Columns" default="2" description="Add the number of columns"/>
+            <property name="density" type="String"  label="Density" default="auto" description="Sets the arrangement style of fields and labels in the form. Accepted values are compact, comfy, and auto (default). Use compact to display fields and their labels on the same line. Use comfy to display fields below their labels. Use auto to let the component dynamically set the density according to the user's Display Density setting and the width of the form."/>
+<supportedFormFactors>
+            <supportedFormFactor type="Small" />
+            <supportedFormFactor type="Large" />
+        </supportedFormFactors>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
