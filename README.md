@@ -1,18 +1,23 @@
-# Salesforce DX Project: Next Steps
+⚡ Lightning Record Form LWC for Screen Flows
+Create dynamic, reusable forms within Salesforce Screen Flows in a matter of minutes using this Lightning Web Component (LWC). This LWC leverages the power of lightning-record-form and provides an efficient and styled solution for gathering and displaying record data within Flow screens.
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+📘 Overview
+This component is designed for:
+Admins and Developers working with Screen Flows
+Easily embedding forms for Create, Edit, or View modes
+Making flows more interactive, dynamic, and user-friendly
+Reducing repeated development work using a reusable component
 
-## How Do You Plan to Deploy Your Changes?
+🚀 Features
+✅ Supports Create, Edit, and View modes
+✅ Works with any standard or custom object
+✅ Auto-handles layouts and fields based on API names
+✅ Compatible with Screen Flows
+✅ Easily customizable with CSS classes and labels
+✅ Quick to deploy and configure
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+<h3>Deploy to Salesforce</h3>
 
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+<a href="https://githubsfdeploy.herokuapp.com?owner=saneh77&repo=LightningRecordForm?ref=main">
+  <img alt="Deploy to Salesforce" src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
