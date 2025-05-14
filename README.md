@@ -12,8 +12,9 @@ Reducing repeated development work using a reusable component
 ✅ Supports Create, Edit, and View modes
 ✅ Works with any standard or custom object
 ✅ Auto-handles layouts and fields based on API names
+✅ Auto-handles fields level security,errors and validation rules
 ✅ Compatible with Screen Flows
-✅ Easily customizable with CSS classes and labels
+✅ Easily customizable with Point and click config settings
 ✅ Quick to deploy and configure
 
 <h3>Deploy to Salesforce</h3>
